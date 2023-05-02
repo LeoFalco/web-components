@@ -1,0 +1,14 @@
+<article class="pokemon" *ngIf="pokemon$ | async as pokemon">
+  <img
+    class="pokemon__sprite"
+    [src]="pokemon.sprites.other['official-artwork'].front_default"
+    alt="Imagem de frente do pokemon {{ pokemon.name }}"
+  />
+  <h2 class="pokemon__name">{{ pokemon.name }}</h2>
+  <div class="pokemon__stats-container">
+    <app-pokemon-stat
+      *ngFor="let stat of pokemon.stats"
+      [stat]="stat"
+    ></app-pokemon-stat>
+  </div>
+</article>

@@ -1,0 +1,10 @@
+{
+  "extends": "../../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../../out-tsc/app/components/pokemon-card",
+    "types": []
+  },
+  "files": [
+    "./pokemon-card.main.ts",
+  ]
+}
